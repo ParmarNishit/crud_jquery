@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="alert-container"></div>
     <div class="container mt-5">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -76,8 +77,13 @@
                         password: password
                     },
                     success: function(data) {
-                        // alert("Added")
-                        console.log(data)
+                        if (data == "Success") {
+                            $('#alert-container').html(`<div class="alert alert-success" role="alert">User added sucessfully</div>`)
+                        } else {
+                            $('#alert-container').html(`<div class="alert alert-danger" role="alert">User not added</div>`)
+                        }
+                        $('#exampleModal').modal('hide')
+                        $('#alert-container').hide(3000)
                     }
                 })
             })
