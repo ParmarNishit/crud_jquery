@@ -1,7 +1,7 @@
-CREATE DATABASE user_db;
+-- CREATE DATABASE user_db;
 
-CREATE TABLE USERS (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(255),
-    password VARCHAR(255)
-);
+-- CREATE TABLE USERS (
+--     id INT PRIMARY KEY AUTO_INCREMENT,
+--     username VARCHAR(255),
+--     password VARCHAR(255)
+-- );
